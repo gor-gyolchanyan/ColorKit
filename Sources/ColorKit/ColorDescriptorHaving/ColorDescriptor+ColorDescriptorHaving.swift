@@ -5,9 +5,9 @@
 
 // Type: ColorDescriptor
 
-// Protocol: CustomColorConvertible
+// Protocol: ColorDescriptorHaving
 
-extension ColorDescriptor: CustomColorConvertible {
+extension ColorDescriptor: ColorDescriptorHaving {
 
     // Exposed
 

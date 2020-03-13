@@ -8,14 +8,14 @@ import AppKit
 
 // Type: NSColor
 
-// Topic: CustomColorConvertible
+// Topic: ColorDescriptorHaving
 
 extension NSColor {
 
     // Exposed
 
     public convenience init<Color>(_ color: Color, style: ColorStyle? = nil)
-    where Color: CustomColorConvertible {
+    where Color: ColorDescriptorHaving {
         switch color.colorDescriptor.withStyle(style) {
             case .dynamic(choose: let choose):
                 if #available(macOS 10.15, *) {

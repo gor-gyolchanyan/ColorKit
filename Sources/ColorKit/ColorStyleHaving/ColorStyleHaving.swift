@@ -3,13 +3,13 @@
 // Licensing information can be found in the `LICENSE` file located in the root directory of this repository.
 //
 
-// Type: CustomColorConvertible
+// Type: ColorStyleHaving
 
-public protocol CustomColorConvertible {
+public protocol ColorStyleHaving {
 
     // Topic: Main
 
     // Exposed
 
-    var colorDescriptor: ColorDescriptor { get }
+    var colorStyle: ColorStyle { get }
 }
