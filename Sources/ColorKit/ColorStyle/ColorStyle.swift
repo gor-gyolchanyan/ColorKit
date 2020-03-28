@@ -3,20 +3,24 @@
 // Licensing information can be found in the `LICENSE` file located in the root directory of this repository.
 //
 
-// Type: ColorStyle
+// Exposed
 
-public struct ColorStyle: Hashable {
-
-    // Topic: Main
+public struct ColorStyle: Hashable, Codable {
 
     // Exposed
 
-    public init(theme: Theme? = nil, contrast: Contrast? = nil) {
+    // Type: ColorStyle
+    // Topic: Main
+
+    public init(
+        theme: Theme = .init(),
+        contrast: Contrast = .init()
+    ) {
         self.theme = theme
         self.contrast = contrast
     }
 
-    public var theme: Theme?
+    public var theme: Theme
 
-    public var contrast: Contrast?
+    public var contrast: Contrast
 }
